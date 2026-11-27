@@ -29,7 +29,7 @@ Console.WriteLine(sb.ToString());
 #endregion*/
 
 
-#region 4
+/*#region 4
 //Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator. 
 Console.WriteLine(" Q4 ");
 string title = "Clean Code";
@@ -39,4 +39,15 @@ string sentence = "Book: " + title + ", Pages: " + pages;
 
 Console.WriteLine(sentence);
 
+#endregion*/
+
+#region 5
+//Build the same sentence as above, but using string interpolation ($"..."). 
+Console.WriteLine(" Q5 ");
+string title = "Clean Code";
+int pages = 464;
+
+string sentence = $"Book: {title}, Pages: {pages}";
+
+Console.WriteLine(sentence);
 #endregion
