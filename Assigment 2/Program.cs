@@ -150,21 +150,6 @@ do
     count++;
 } while (count < 3);
 
-
-Console.WriteLine(" Q13 ");
-foreach (string book in books)
-{
-    Console.WriteLine(book);
-}
-
-
-Console.WriteLine(" Q13 ");
-foreach (string book in books)
-{
-    if (book == "Refactoring")
-        break;
-    Console.WriteLine(book);
-}
 #endregion*/
 
 /*#region 14
