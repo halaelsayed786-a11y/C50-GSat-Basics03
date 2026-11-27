@@ -123,7 +123,7 @@ for (int i = 0; i < books.Length; i++)
 }
 #endregion*/
 
-#region 12
+/*#region 12
 //Using the same books array, use a while loop to print every book title. 
 Console.WriteLine(" Q13 ");
 int index = 0;
@@ -134,5 +134,35 @@ while (index < books.Length)
 {
     Console.WriteLine(books[index]);
     index++;
+}
+#endregion*/
+
+#region 13
+//Write a do-while loop that prints "Checking book..." exactly 3 times. 
+
+Console.WriteLine(" Q13 ");
+int count = 0;
+string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+do
+{
+    Console.WriteLine("Checking book...");
+    count++;
+} while (count < 3);
+
+
+Console.WriteLine(" Q13 ");
+foreach (string book in books)
+{
+    Console.WriteLine(book);
+}
+
+
+Console.WriteLine(" Q13 ");
+foreach (string book in books)
+{
+    if (book == "Refactoring")
+        break;
+    Console.WriteLine(book);
 }
 #endregion
