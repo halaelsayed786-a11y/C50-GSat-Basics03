@@ -84,7 +84,7 @@ if (pages > 300 && isAvailable)
     Console.WriteLine("You can borrow this book");
 #endregion*/
 
-#region 9
+/*#region 9
 //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is "Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else. 
 
 Console.WriteLine(" Q10 ");
@@ -101,4 +101,14 @@ switch (t)
         Console.WriteLine("Never heard of it");
         break;
 }
+#endregion*/
+
+#region 10
+//Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a variable sizeLabel(same rule as question 8: long if pages > 300). 
+
+Console.WriteLine(" Q11 ");
+int pages = 464;
+string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
+Console.WriteLine(sizeLabel);
+
 #endregion
