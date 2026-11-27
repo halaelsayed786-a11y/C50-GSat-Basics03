@@ -8,11 +8,23 @@ Console.WriteLine(title);
 Console.WriteLine(upperTitle);  
 #endregion*/
 
-#region 2
+/*#region 2
 //Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals() to check if they point to the same object in memory. 
 Console.WriteLine(" Q2 ");
 string s1 = "Clean Code";
 string s2 = "Clean Code";
 Console.WriteLine(ReferenceEquals(s1, s2));
 
+#endregion*/
+
+#region 3
+
+//Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
+using System.Text;
+
+Console.WriteLine(" Q3 ");
+StringBuilder sb = new StringBuilder();
+sb.Append("Book List");
+Console.WriteLine(sb.ToString()); 
 #endregion
+
