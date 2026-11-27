@@ -77,7 +77,7 @@ else
 /*#region 8
 //Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is greater than 300 and isAvailab0le is true. Use the && operator. 
 
-Console.WriteLine(" Q9 ");
+Console.WriteLine(" Q8 ");
 int pages = 464;
 bool isAvailable = true;
 if (pages > 300 && isAvailable)
@@ -87,7 +87,7 @@ if (pages > 300 && isAvailable)
 /*#region 9
 //Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is "Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else. 
 
-Console.WriteLine(" Q10 ");
+Console.WriteLine(" Q9 ");
 string t = "Refactoring";
 switch (t)
 {
@@ -106,7 +106,7 @@ switch (t)
 /*#region 10
 //Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a variable sizeLabel(same rule as question 8: long if pages > 300). 
 
-Console.WriteLine(" Q11 ");
+Console.WriteLine(" Q10 ");
 int pages = 464;
 string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
 Console.WriteLine(sizeLabel);
@@ -115,7 +115,7 @@ Console.WriteLine(sizeLabel);
 
 /*#region 11
 //Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop to print each book with its position number, like 1.Clean Code. 
-Console.WriteLine(" Q12 ");
+Console.WriteLine(" Q11 ");
 string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 for (int i = 0; i < books.Length; i++)
 {
@@ -125,7 +125,7 @@ for (int i = 0; i < books.Length; i++)
 
 /*#region 12
 //Using the same books array, use a while loop to print every book title. 
-Console.WriteLine(" Q13 ");
+Console.WriteLine(" Q12 ");
 int index = 0;
 string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
 
@@ -137,7 +137,7 @@ while (index < books.Length)
 }
 #endregion*/
 
-#region 13
+/*#region 13
 //Write a do-while loop that prints "Checking book..." exactly 3 times. 
 
 Console.WriteLine(" Q13 ");
@@ -163,6 +163,20 @@ foreach (string book in books)
 {
     if (book == "Refactoring")
         break;
+    Console.WriteLine(book);
+}
+#endregion*/
+
+#region 14
+//Using the same books array, use a foreach loop to print every book title. 
+
+Console.WriteLine(" Q14 ");
+string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+foreach (string book in books)
+{
+    if (book == "The Pragmatic Programmer")
+        continue;
     Console.WriteLine(book);
 }
 #endregion
