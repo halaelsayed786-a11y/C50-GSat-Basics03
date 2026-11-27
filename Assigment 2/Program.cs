@@ -192,7 +192,7 @@ foreach (string book in books)
 }
 #endregion*/
 
-#region 16
+/*#region 16
 //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with continue, don't stop the loop).
 Console.WriteLine(" Q16 ");
 string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
@@ -203,4 +203,22 @@ foreach (string book in books)
         continue;
     Console.WriteLine(book);
 }
+#endregion*/
+#region 17
+
+//Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty, use return to exit the method early instead of printing anything. 
+Console.WriteLine(" Q17 ");
+string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+PrintFirstBook(books);
+PrintFirstBook(new string[0]);
+
+    static void PrintFirstBook(string[] books)
+{
+    if (books.Length == 0)
+        return;
+
+    Console.WriteLine(books[0]);
+}
+
 #endregion
