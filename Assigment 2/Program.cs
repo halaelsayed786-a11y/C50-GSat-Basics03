@@ -17,7 +17,7 @@ Console.WriteLine(ReferenceEquals(s1, s2));
 
 #endregion*/
 
-#region 3
+/*#region 3
 
 //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
 using System.Text;
@@ -26,5 +26,17 @@ Console.WriteLine(" Q3 ");
 StringBuilder sb = new StringBuilder();
 sb.Append("Book List");
 Console.WriteLine(sb.ToString()); 
-#endregion
+#endregion*/
 
+
+#region 4
+//Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator. 
+Console.WriteLine(" Q4 ");
+string title = "Clean Code";
+int pages = 464;
+
+string sentence = "Book: " + title + ", Pages: " + pages;
+
+Console.WriteLine(sentence);
+
+#endregion
