@@ -74,7 +74,7 @@ else
     Console.WriteLine("Short Book");
 #endregion*/
 
-#region 8
+/*#region 8
 //Given int pages = 464; and bool isAvailable = true;, print "You can borrow this book" only if pages is greater than 300 and isAvailab0le is true. Use the && operator. 
 
 Console.WriteLine(" Q9 ");
@@ -82,4 +82,23 @@ int pages = 464;
 bool isAvailable = true;
 if (pages > 300 && isAvailable)
     Console.WriteLine("You can borrow this book");
+#endregion*/
+
+#region 9
+//Given string title = "Refactoring";, write a switch statement that prints "Great choice!" if the title is "Clean Code", "Nice pick!" if it's "Refactoring", and "Never heard of it" for anything else. 
+
+Console.WriteLine(" Q10 ");
+string t = "Refactoring";
+switch (t)
+{
+    case "Clean Code":
+        Console.WriteLine("Great choice!");
+        break;
+    case "Refactoring":
+        Console.WriteLine("Nice pick!");
+        break;
+    default:
+        Console.WriteLine("Never heard of it");
+        break;
+}
 #endregion
