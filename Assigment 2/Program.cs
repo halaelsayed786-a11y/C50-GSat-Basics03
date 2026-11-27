@@ -41,13 +41,24 @@ Console.WriteLine(sentence);
 
 #endregion*/
 
-#region 5
+/*#region 5
 //Build the same sentence as above, but using string interpolation ($"..."). 
 Console.WriteLine(" Q5 ");
 string title = "Clean Code";
 int pages = 464;
 
 string sentence = $"Book: {title}, Pages: {pages}";
+
+Console.WriteLine(sentence);
+#endregion*/
+
+#region 6
+//Build the same sentence again, but using string.Format(). 
+Console.WriteLine(" Q6 ");
+string title = "Clean Code";
+int pages = 464;
+
+string sentence = string.Format("Book: {0}, Pages: {1}", title, pages);
 
 Console.WriteLine(sentence);
 #endregion
