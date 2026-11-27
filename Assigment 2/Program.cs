@@ -167,7 +167,7 @@ foreach (string book in books)
 }
 #endregion*/
 
-#region 14
+/*#region 14
 //Using the same books array, use a foreach loop to print every book title. 
 
 Console.WriteLine(" Q14 ");
@@ -177,5 +177,17 @@ foreach (string book in books)
 {
     Console.WriteLine(book);
 
+}
+#endregion*/
+#region 15
+//Using the same books array, loop through it and print each title, but stop completely (break) once you reach "Refactoring". 
+Console.WriteLine(" Q15 ");
+string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+
+foreach (string book in books)
+{
+    if (book == "Refactoring")
+        break;
+    Console.WriteLine(book);
 }
 #endregion
