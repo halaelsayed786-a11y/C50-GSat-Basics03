@@ -103,7 +103,7 @@ switch (t)
 }
 #endregion*/
 
-#region 10
+/*#region 10
 //Given int pages = 464;, use the ternary operator to store "Long Book" or "Short Book" into a variable sizeLabel(same rule as question 8: long if pages > 300). 
 
 Console.WriteLine(" Q11 ");
@@ -111,4 +111,14 @@ int pages = 464;
 string sizeLabel = pages > 300 ? "Long Book" : "Short Book";
 Console.WriteLine(sizeLabel);
 
+#endregion*/
+
+#region 11
+//Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop to print each book with its position number, like 1.Clean Code. 
+Console.WriteLine(" Q12 ");
+string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+for (int i = 0; i < books.Length; i++)
+{
+    Console.WriteLine($"{i + 1}. {books[i]}");
+}
 #endregion
